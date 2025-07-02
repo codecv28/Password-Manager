@@ -7,7 +7,7 @@ import Signup from './components/Signup'
 import { LoginContext, SignupContext } from './context/context'
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false)
+  const [loggedIn, setLoggedIn] = useState(true)
   const [signup, setSignup] = useState(true)
 
   return (

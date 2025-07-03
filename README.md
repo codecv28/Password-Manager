@@ -2,7 +2,7 @@
 A functional and completely responsive web-app that enables user to manage their passwords(alongwith their usernames and URL) by saving them into database which is visible in the table in UI. 
 
 ### Frontend
-The frontend is built with ReactJs consisting following major components:
+The frontend is built with ReactJs and TailwindCSS consisting following major components:
 - `Navbar` : Contains user button to see username which is currently logged in and a log out button
 - `Manager` : Contains all the core functionality in `Manager.jsx`
 - `Sign up` (in progress) : User can create a new account

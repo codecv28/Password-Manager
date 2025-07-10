@@ -1,9 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { useContext } from 'react'
-import { LoginContext } from '../context/context'
-import { SignupContext } from '../context/context'
-
+import { LoginContext , SignupContext } from '../context/context'
 
 const Signup = () => {
 
@@ -27,11 +25,11 @@ const Signup = () => {
             <h1 className='text-3xl font-bold mb-2 mt-10'>Sign up</h1>
             <form className='flex flex-col items-center'>
                 <input {...register("username", {
-                    reuired: { value: true, message: "Please enter username" }
+                    required: { value: true, message: "Please enter username" }
                 })} className='bg-neutral-800 rounded-2xl h-9 w-100 px-5 outline-none my-5 mx-5' placeholder='Username' type="text" />
 
                 <input {...register("password", {
-                    reuired: { value: true, message: "Please enter password" }
+                    required: { value: true, message: "Please enter password" }
                 })} className='bg-neutral-800 rounded-2xl h-9 w-100 px-5 outline-none my-5 mx-5' placeholder='Password' type="password" />
 
                 <button type='submit' onClick={() => { value1.setLoggedIn(true) }} className='bg-neutral-800 hover:bg-neutral-700 cursor-pointer font-bold w-fit m-auto px-4 py-1 rounded-lg mb-5'>Sign up</button>
